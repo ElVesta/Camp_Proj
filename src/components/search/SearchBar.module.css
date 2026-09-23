@@ -1,0 +1,121 @@
+.searchContainer {
+  position: relative;
+  width: 377px;
+}
+
+.searchWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  height: 48px;
+  padding: 0 50px 0 19px;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #434e6f;
+}
+
+/* Темная тема для поиска */
+.dark .searchInput {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.dark .searchInput:focus {
+  border-color: #ffffff;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 29px;
+  height: 29px;
+  cursor: pointer;
+}
+
+/* Выпадающий список подсказок */
+.suggestionsDropdown {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.dark .suggestionsDropdown {
+  background-color: #ffffff;
+  border-color: #434e6f;
+}
+
+.suggestionItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.suggestionItem:last-child {
+  border-bottom: none;
+}
+
+.suggestionItem:hover {
+  background-color: #f5f5f5;
+}
+
+.suggestionImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.suggestionInfo {
+  flex: 1;
+}
+
+.suggestionTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.suggestionPrice {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #434e6f;
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    width: 100%;
+  }
+}

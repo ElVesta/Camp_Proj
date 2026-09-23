@@ -1,0 +1,28 @@
+.button {
+  background-color: #434e6f;
+  border-radius: 10px;
+  height: 66px;
+  width: 170px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 66px;
+}

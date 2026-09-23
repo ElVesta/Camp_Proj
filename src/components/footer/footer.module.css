@@ -1,0 +1,172 @@
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 35px 42px;
+  gap: 20px;
+}
+
+.dark .footer {
+  background-color: #ffffff;
+}
+
+.logo {
+  flex: 0 0 auto;
+  min-width: 200px;
+}
+
+.logoImage {
+  width: 180px;
+  height: auto;
+}
+
+.company {
+  flex: 0 0 auto;
+  min-width: 150px;
+}
+
+.info {
+  flex: 0 0 auto;
+  min-width: 150px;
+}
+
+.title {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #434e6f !important;
+  margin-bottom: 15px;
+}
+
+.company div,
+.info div {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  transition: color 0.3s;
+}
+
+.company div:hover,
+.info div:hover {
+  color: #434e6f;
+}
+
+.contacts {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.contacts img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contacts p,
+.contacts div {
+  font-size: 14px;
+  width: auto;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  color: #000000;
+}
+
+.time {
+  flex: 0 0 auto;
+  min-width: 200px;
+  text-align: right;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.time p {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    flex-wrap: wrap;
+    padding: 30px 30px;
+    gap: 30px;
+  }
+  
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .company, .info, .time {
+    flex: 1;
+    min-width: auto;
+  }
+  
+  .contacts {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .time {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 25px;
+    text-align: center;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .company, .info, .contacts, .time {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .contactItem {
+    justify-content: center;
+  }
+  
+  .contacts p,
+  .contacts div {
+    text-align: left;
+  }
+  
+  .time {
+    text-align: center;
+  }
+  
+  .company div,
+  .info div {
+    display: inline-block;
+    margin: 0 10px 10px;
+  }
+}

@@ -1,0 +1,87 @@
+.orderForm {
+  width: 100%;
+  max-width: 1356px;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.formRow {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.formRow:last-child {
+  margin-bottom: 0;
+}
+
+.formField {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #434e6f;
+  transition: color 0.3s;
+}
+
+body.dark .label {
+  color: #ffffff !important;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.58px solid #000000;
+  border-radius: 6.32px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  color: #333;
+}
+
+body.dark .input {
+  background-color: #ffffff;
+  border-color: #000000;
+  color: #333;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #434e6f;
+}
+
+.inputError {
+  border-color: #ef4444 !important;
+}
+
+.errorText {
+  color: #ef4444;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+body.dark .input::placeholder {
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

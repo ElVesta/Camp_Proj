@@ -1,0 +1,160 @@
+.cartCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 11.05px;
+  width: 100%;
+  max-width: 797px;
+  padding: 20px 30px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.imageWrapper {
+  width: 128px;
+  height: 128px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  flex: 2;
+  min-width: 150px;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-size: 18.3px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.price {
+  min-width: 100px;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-size: 24.4px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.counterWrapper {
+  flex-shrink: 0;
+}
+
+.removeBtn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.removeBtn:hover {
+  opacity: 0.7;
+}
+
+.removeBtn img {
+  width: 31px;
+  height: 31px;
+}
+
+.rentSection {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-radius: 0 0 8px 8px;
+  padding: 12px 0;
+}
+
+.rentSelect {
+  width: 100%;
+  max-width: 250px;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("src/assets/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 13px 8px;
+  padding-right: 32px;
+}
+
+.rentSelect:focus {
+  outline: none;
+  border-color: #434e6f;
+}
+
+.imageWrapper {
+  width: 128px;
+  height: 128px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.title {
+  flex: 2;
+  min-width: 150px;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-size: 18.3px;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: #434e6f;
+  text-decoration: underline;
+}
+
+.imageWrapper:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  .cartCard {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .removeBtn {
+    order: -1;
+    align-self: flex-end;
+  }
+  
+  .rentSection {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+  }
+}

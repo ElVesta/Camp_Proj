@@ -1,0 +1,237 @@
+.authPage {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authContainer {
+  display: flex;
+  gap: 190px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.formSection {
+  width: 460px;
+  background: transparent;
+}
+
+.tabs {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 28.9px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  color: #434e6fcc;
+  transition: color 0.3s;
+}
+
+.activeTab {
+  color: #434e6f;
+}
+
+.activeLine {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #434e6f;
+  border-radius: 14px;
+}
+
+.title {
+  color: #434e6f;
+  font-family: "Inter", sans-serif;
+  font-size: 51.6px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.subtitle {
+  color: #434e6f;
+  font-family: "Inter", sans-serif;
+  font-size: 30.2px;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.inputGroup {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 18px 50px 18px 16px;
+  border: 1.74px solid #000000;
+  border-radius: 3.49px;
+  font-family: "Inter", sans-serif;
+  font-size: 19.2px;
+  font-weight: 500;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: #000000b2;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #434e6f;
+}
+
+.inputIcon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  pointer-events: none;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 16.8px;
+  font-weight: 500;
+  color: #000000b2;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1.53px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.forgotLink {
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16.8px;
+  font-weight: 500;
+  color: #000000b2;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.forgotLink:hover {
+  color: #434e6f;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.submitButton {
+  background-color: #434e6f;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.submitButton:hover {
+  opacity: 0.9;
+}
+
+.imageSection {
+  width: 481px;
+}
+
+.authImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.errorMessage {
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.inputError {
+  border-color: #ef4444 !important;
+}
+
+.errorText {
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .authContainer {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .formSection {
+    width: 100%;
+    max-width: 460px;
+  }
+  
+  .imageSection {
+    display: none;
+  }
+  
+  .title {
+    font-size: 36px;
+  }
+  
+  .subtitle {
+    font-size: 22px;
+  }
+  
+  .buttonWrapper {
+    justify-content: center;
+  }
+}
